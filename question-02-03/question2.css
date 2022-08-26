@@ -1,2 +1,37 @@
 /* TODO Your CSS here. */
 
+#container {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 20px;
+
+
+}
+
+.card {
+    justify-content: space-evenly;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 3px darkgray;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.card-image {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card-body {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
