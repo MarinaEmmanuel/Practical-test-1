@@ -16,24 +16,33 @@ window.addEventListener("load", function () {
 
     // TODO (C) Loop through all concerts in the concerts array (see question3-concerts.js). For each one,
     // call the addCard() function, supplying that concert as a parameter.
+    function addCard(concerts) {
 
+        const container = document.querySelector("#container");
+    
+    
+        const cardImage = document.querySelector(".cardImage");
+        const descriptionText = document.querySelector("descriptionText");
+    
+        //descriptionText.innerHTML = concerts.description;
+        //cardImage.title = concerts.name;
+        //cardImage.alt = concerts.name;
+        //cardImage.src = `./assets/${concerts.imageName}`;
+        //console.log(concerts)
+        
+        container.innerHTML += `<div class="card">
+        <div class="card-header"><a href=${concerts.url}><img class="card-image" src="./assets/${concerts.imageName}"></a></div>
+        <div class="card-body">
+            <h1 class="card-title">${concerts.name}</h1>
+            <p class="card-text">${concerts.description}</p>
+        </div>
+        </div>
+    `
+    
+    }
+
+    concerts.forEach(addCard)
 });
 
-function addCard(concerts) {
 
-    const cardImage = document.querySelector(".card-image");
-    const descriptionText = document.querySelector("descriptionText");
 
-    descriptionText.innerHTML = concerts.description;
-    cardImage.title = concerts.name;
-    cardImage.alt = concerts.name;
-    cardImage.src = `./assets/${concerts.imageName}`;
-    console.log(concerts)
-    
-
-}
-    
-concerts.forEach(function(addCard) {
-    
-
-    });
