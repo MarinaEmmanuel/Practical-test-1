@@ -41,7 +41,7 @@ window.addEventListener("load", function () {
     
     }
 
-    concerts.forEach(addCard)
+    
 });
 
 
