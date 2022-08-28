@@ -18,3 +18,22 @@ window.addEventListener("load", function () {
     // call the addCard() function, supplying that concert as a parameter.
 
 });
+
+function addCard(concerts) {
+
+    const cardImage = document.querySelector(".card-image");
+    const descriptionText = document.querySelector("descriptionText");
+
+    descriptionText.innerHTML = concerts.description;
+    cardImage.title = concerts.name;
+    cardImage.alt = concerts.name;
+    cardImage.src = `./assets/${concerts.imageName}`;
+    console.log(concerts)
+    
+
+}
+    
+concerts.forEach(function(addCard) {
+    
+
+    });
